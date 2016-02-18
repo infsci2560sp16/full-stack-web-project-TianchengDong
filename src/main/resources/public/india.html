@@ -26,13 +26,13 @@
 
   </head>
 
-  <body id="china">
+  <body id="india">
 
 
     <!-- NAVBAR
     ================================================== -->
     <div class="navbar-wrapper">
-        <nav class="navbar navbar-inverse bg-faded navbar-static-top">
+        <nav class="navbar bg-faded navbar-static-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -41,23 +41,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand ripple-effect" href="#">MEET</a>
+              <a class="navbar-brand ripple-effect" href="#">MEET <span style="font-family:Skia;">Asia</span> </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="ripple-effect"><a href="index.html">Home</a></li>
-                <li class="ripple-effect"><a href="#about">Gallery</a></li>
-                <li class="ripple-effect"><a href="#contact">Forum</a></li>
+                <li class="active ripple-effect"><a href="index.html">Home</a></li>
+                <li class="ripple-effect"><a href="login.html">Log in</a></li>
+                <li class="ripple-effect"><a href="signup.html">Sign up</a></li>
+                <li class="ripple-effect"><a href="mypage.html">My page</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle ripple-effect" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Page<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle ripple-effect" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">My home</a></li>
+                    <li><a href="gallery.html">All destinations</a></li>
                     <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Account</li>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li class="dropdown-header">Category</li>
+                    <li><a href="china.html">China</a></li>
+                    <li><a href="southkorea.html">South Korea</a></li>
+                    <li><a href="japan.html">Japan</a></li>
+                    <li><a href="india.html">India</a></li>
+                    <li><a href="thailand.html">Thailand</a></li>
+                    <li><a href="more.html">More ...</a></li>
                   </ul>
                 </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a class="ripple-effect" href="">Log out</a></li>
               </ul>
             </div>
           </div>
@@ -70,9 +78,10 @@
     ================================================== -->
     <div class="gallery-header">
       <div class="container ">
-        <h3> MEET India </h3>
+        <h3> MEET </h3>
+        <h4> India </h4>
         <p>
-          <img class="img-circle" src="images/pic26.jpg" align="middle" width="120" height="120">
+          <img class="img-circle" src="images/pic26.jpg" align="middle" width="100" height="100">
         </p>
       </div>
     </div>
@@ -87,62 +96,33 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="images/pic17.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Beijing</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <img class="img-circle" src="images/pic40.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Delhi</h2>
+          <p>Delhi is Mystery, magic, mayhem. India’s capital is littered with the relics of lost empires. A recommended way to glimpse is to take one of the city’s tours from a former street child’s view of Old Delhi to a cycle tour along the Yamuna.</p>
           <p>
           <button id="beijing" class="favorite"></button>
           </p>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">
-          <img class="img-circle" src="images/pic18.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Shanghai</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <img class="img-circle" src="images/pic41.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Mumbai(Bombay)</h2>
+          <p>Mumbai is full of dreamers and hard-labourers, stray dogs and exotic birds, artists and servants and fisherfolk and crorepatis and lots and lots of people. It has India’s most prolific film industry, and some of Asia’s biggest slums.</p>
           <p>
           <button id="beijing" class="favorite"></button>
           </p>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">
-          <img class="img-circle" src="images/pic19.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Xi'an</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <img class="img-circle" src="images/pic42.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Jaipur</h2>
+          <p>Jaipur, Rajasthan’s capital, is an enthralling historical city and the gateway to India’s most flamboyant state. It's colourful, chaotic streets ebb and flow with a heady brew of old and new. The grandeur of Amber Fort is Jaipur’s star attraction.</p>
           <p>
           <button id="beijing" class="favorite"></button>
           </p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-      <hr class="colum-divider">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="images/pic20.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Chengdu</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p>
-          <button id="beijing" class="favorite"></button>
-          </p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="images/pic21.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Hong Kong</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p>
-          <button id="beijing" class="favorite"></button>
-          </p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="images/pic22.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Taipei</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p>
-          <button id="beijing" class="favorite"></button>
-          </p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
 
 
 

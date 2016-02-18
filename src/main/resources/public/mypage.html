@@ -11,7 +11,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet prefetch' >
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -26,7 +26,7 @@
 
   </head>
 
-  <body id="gallery">
+  <body id="mypage">
 
 
     <!-- NAVBAR
@@ -77,37 +77,85 @@
     <!-- Gallery header
     ================================================== -->
     <div class="gallery-header">
-      <div class="container ">
-        <br><br><br>
-        <h3 style="color:#585858; font-family:Skia; font-weight:bold; font-size:60px;"> Welcome to Asia </h3>
+      <div class="container">
+        <br>
+        <h3> MEET <span style="font-family:Skia; font-size:36px; font-weight:bold;">Asia</span> </h3>
+        <br><br>
+        <h4> Hello, <span></span> </h4>
       </div>
     </div>
 
-
-
-    <!-- Gallery card
+    <!-- Marketing messaging
     ================================================== -->
-    <div class="card">
-    <a class="ripple-effect" href="china.html" title=""><div style="background-image: url(images/pic10.jpg);"></div><span><h3>China</h3><p>Aliquam egestas tortor vel libero pulvinar, ut iaculis leo facilisis. Praesent pretium mattis dapibus.</p></span></a>
-    <a class="ripple-effect" href="southkorea.html" title=""><div style="background-image: url(images/pic11.jpg);"></div><span><h3>South Korea</h3><p>Aliquam egestas tortor vel libero pulvinar, ut iaculis leo facilisis. Praesent pretium mattis dapibus.</p></span></a>
-    <a class="ripple-effect" href="japan.html" title=""><div style="background-image: url(images/pic14.jpg);"></div><span><h3>Japan</h3><p>Aliquam egestas tortor vel libero pulvinar, ut iaculis leo facilisis. Praesent pretium mattis dapibus.</p></span></a>
-    <a class="ripple-effect" href="india.html" title=""><div style="background-image: url(images/pic13.jpg);"></div><span><h3>India</h3><p>Aliquam egestas tortor vel libero pulvinar, ut iaculis leo facilisis. Praesent pretium mattis dapibus.</p></span></a>
-    <a class="ripple-effect" href="thailand.html" title=""><div style="background-image: url(images/pic15.jpg);"></div><span><h3>Thailand</h3><p>Aliquam egestas tortor vel libero pulvinar, ut iaculis leo facilisis. Praesent pretium mattis dapibus.</p></span></a>
-    <a class="ripple-effect" href="more.html" title=""><div style="background-image: url(images/pic16.jpg);"></div><span><h3>More</h3><p>Aliquam egestas tortor vel libero pulvinar, ut iaculis leo facilisis. Praesent pretium mattis dapibus.</p></span></a>
+    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    </div>
+    <div class="container marketing">
+       <div class="post">
+       <h3 style="text-align:center; font-family:Avenir;"> Post your itinerary or experience to Asia </h3>
+
+       <div class="post-group">
+       <label>Theme</label>
+       <input class="form-control" id="theme" placeholder="Type theme">
+       <small class="text-muted">We recommend you to give a theme to your post.</small>
+       </div>
+
+       <div class="post-group">
+       <label for="countryselect">Select countries or regions you write about</label>
+       <select multiple class="form-control" id="countryselect">
+       <option>China</option>
+       <option>India</option>
+       <option>Japan</option>
+       <option>South Korea</option>
+       <option>Thailand</option>
+       <option>Other</option>
+       </select>
+       </div>
+
+       <div class="post-group">
+       <label>Other countries or regions</label>
+       <br>
+       <small class="text-muted">If you select other countries or regions, please type them below.</small>
+       <input class="form-control" id="othercountry" placeholder="Type countries or regions">
+       </div>
+
+       <div class="post-group">
+       <label>Choose your emotion</label>
+       <br>
+       <input id="e1" type="radio" name="emotion" value="awesome" />
+       <label class="emotion e1" for="happy"></label>
+       <input id="e2" type="radio" name="emotion" value="happy" />
+       <label class="emotion e2"for="mastercard"></label>
+       <input id="e3" type="radio" name="emotion" value="amazing" />
+       <label class="emotion e3"for="mastercard"></label>
+       <input id="e4" type="radio" name="emotion" value="sad" />
+       <label class="emotion e4"for="mastercard"></label>
+       <input id="e5" type="radio" name="emotion" value="angry" />
+       <label class="emotion e5"for="mastercard"></label>
+       </div>
+
+       <div class="post-group">
+       <label for="comment">Post here:</label>
+       <textarea class="form-control" rows="10" id="comment"></textarea>
+       </div>
+
+       <div class="post-group">
+       <a  type="submit" class="btn btn-lg btn-primary ripple-effect"  role="button">Submit</a>
+       </div>
 
 
-    <!-- FOOTER -->
+       </div>
 
-    <div class="card-footer">
 
-    <footer class="footer">
-      <p class="pull-right"><a href="#">Back to top</a></p>
-      <p>&copy; 2016 Tiancheng Dong &middot; (TID17)</p>
-    </footer>
 
-    </div>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p class="pull-right"><a href="gallery.html">Back to Gallery</a> &middot; <a href="#">Back to top</a></p>
+        <p>&copy; 2016 Tiancheng Dong &middot; (TID17)</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -121,5 +169,6 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+
   </body>
 </html>

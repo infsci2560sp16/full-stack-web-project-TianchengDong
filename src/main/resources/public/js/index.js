@@ -85,3 +85,8 @@ $('.responsive').on('click', '.close', function(){
 $('.favorite').click(function(){
   $(this).toggleClass('favorited');
 });
+
+/* tooltip animation */
+$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();
+		});

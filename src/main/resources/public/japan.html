@@ -26,13 +26,13 @@
 
   </head>
 
-  <body id="china">
+  <body id="japan">
 
 
     <!-- NAVBAR
     ================================================== -->
     <div class="navbar-wrapper">
-        <nav class="navbar navbar-inverse bg-faded navbar-static-top">
+        <nav class="navbar bg-faded navbar-static-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -41,23 +41,31 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand ripple-effect" href="#">MEET</a>
+              <a class="navbar-brand ripple-effect" href="#">MEET <span style="font-family:Skia;">Asia</span> </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="ripple-effect"><a href="index.html">Home</a></li>
-                <li class="ripple-effect"><a href="#about">Gallery</a></li>
-                <li class="ripple-effect"><a href="#contact">Forum</a></li>
+                <li class="active ripple-effect"><a href="index.html">Home</a></li>
+                <li class="ripple-effect"><a href="login.html">Log in</a></li>
+                <li class="ripple-effect"><a href="signup.html">Sign up</a></li>
+                <li class="ripple-effect"><a href="mypage.html">My page</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle ripple-effect" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Page<span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle ripple-effect" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">My home</a></li>
+                    <li><a href="gallery.html">All destinations</a></li>
                     <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Account</li>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li class="dropdown-header">Category</li>
+                    <li><a href="china.html">China</a></li>
+                    <li><a href="southkorea.html">South Korea</a></li>
+                    <li><a href="japan.html">Japan</a></li>
+                    <li><a href="india.html">India</a></li>
+                    <li><a href="thailand.html">Thailand</a></li>
+                    <li><a href="more.html">More ...</a></li>
                   </ul>
                 </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a class="ripple-effect" href="">Log out</a></li>
               </ul>
             </div>
           </div>
@@ -70,9 +78,10 @@
     ================================================== -->
     <div class="gallery-header">
       <div class="container ">
-        <h3> MEET Japan </h3>
+        <h3> MEET </h3>
+        <h4> Japan </h4>
         <p>
-          <img class="img-circle" src="images/pic25.jpg" align="middle" width="120" height="120">
+          <img class="img-circle" src="images/pic25.jpg" align="middle" width="100" height="100">
         </p>
       </div>
     </div>
@@ -87,27 +96,27 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="images/pic17.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Beijing</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <img class="img-circle" src="images/pic34.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Tokyo</h2>
+          <p>Tokyo is always on the move! Such is the joy of living in a city that prides itself on constant renewal and reinvention; it seriously never gets old. Tokyo has everything you can ask of a city, and has it in spades: a rich, cosmopolitan dining scene.</p>
           <p>
           <button id="beijing" class="favorite"></button>
           </p>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">
-          <img class="img-circle" src="images/pic18.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Shanghai</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <img class="img-circle" src="images/pic35.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Kyoto</h2>
+          <p>Kyoto is old Japan writ large: quiet temples, sublime gardens, colourful shrines and geisha scurrying to secret liaisons. You’ll find true masterpieces of religious architecture, and enjoy the entire spectrum of Japanese food, from kaiseki to rāmen.</p>
           <p>
           <button id="beijing" class="favorite"></button>
           </p>
         </div><!-- /.col-lg-4 -->
 
         <div class="col-lg-4">
-          <img class="img-circle" src="images/pic19.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Xi'an</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <img class="img-circle" src="images/pic36.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Osaka</h2>
+          <p>Osaka is Japan's third largest city, which is famous for good food. Sightseeing highlights include Osaka Castle, the Blade Runner–style nighttime scenery of the Dōtombori area, the gloriously gaudy retro storefronts of the Shin-Sekai neighborhood.</p>
           <p>
           <button id="beijing" class="favorite"></button>
           </p>
@@ -119,25 +128,25 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="images/pic20.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Chengdu</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <img class="img-circle" src="images/pic37.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Sapporo</h2>
+          <p>Japan's fifth-largest city, and the prefectural capital of Hokkaidō, Sapporo is a surprisingly dynamic and cosmopolitan urban centre that pulses with energy. Sapporo is shaped by its wide grid of tree-lined streets and ample public parks. </p>
           <p>
           <button id="beijing" class="favorite"></button>
           </p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/pic21.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Hong Kong</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <img class="img-circle" src="images/pic38.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Nara</h2>
+          <p>Japan's first permanent capital, Nara is one of the country's most rewarding destinations. The centrepiece is the Daibutsu (Great Buddha), which rivals Mt Fuji and Kyoto's Golden Pavilion (Kinkaku-ji) as Japan's single most impressive sight.</p>
           <p>
           <button id="beijing" class="favorite"></button>
           </p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="images/pic22.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Taipei</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <img class="img-circle" src="images/pic39.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Yokohama</h2>
+          <p>Yokohama has an appealing flavour and history all its own, even though it's just 20 minutes' train ride south of central Tokyo. For visitors it's the breezy bay front, creative arts scene, multiple microbreweries, jazz clubs and great international dining.</p>
           <p>
           <button id="beijing" class="favorite"></button>
           </p>
