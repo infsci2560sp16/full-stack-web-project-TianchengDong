@@ -651,12 +651,11 @@ ol, ul {
   height: 210px;
   overflow: visible;
   margin: 20px;
-  display: block;
+  display:block;
   background-color: #000;
-  text-decoration: none;
 }
 
-.card a div {
+.card a .card-out {
   position: relative;
   z-index: 1;
   width: 358px;
@@ -681,7 +680,7 @@ ol, ul {
   transition:  width .2s, height .2s, transform .2s, box-shadow .2s;
 }
 
-.card a div:before {
+.card a .card-out:before {
   content: "";
   display: block;
   width: 600px;
@@ -692,12 +691,12 @@ ol, ul {
   left: 0;
   opacity: 1;
   background: -moz-linear-gradient(left,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.85) 20%, rgba(0,0,0,0) 60%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.9)), color-stop(20%,rgba(0,0,0,0.85)), color-stop(60%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.85) 20%,rgba(0,0,0,0) 60%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.85) 20%,rgba(0,0,0,0) 60%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.85) 20%,rgba(0,0,0,0) 60%); /* IE10+ */
-background: linear-gradient(to right,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.85) 20%,rgba(0,0,0,0) 60%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.9)), color-stop(20%,rgba(0,0,0,0.85)), color-stop(60%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.85) 20%,rgba(0,0,0,0) 60%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.85) 20%,rgba(0,0,0,0) 60%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.85) 20%,rgba(0,0,0,0) 60%); /* IE10+ */
+  background: linear-gradient(to right,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.85) 20%,rgba(0,0,0,0) 60%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
 
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
@@ -706,11 +705,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
   transition: all 1s ease-in-out;
 }
 
-.card a:hover div:before {
+.card a:hover .card-out:before {
   opacity: 0.5;
 }
 
-.card a:hover div {
+.card a:hover .card-out {
   width: 366px;
   height: 226px;
 
@@ -724,7 +723,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
   transform:         translate(-8px,-8px);
 }
 
-.card a:active div {
+.card a:active .card-out {
   width: 358px;
   height: 218px;
   -webkit-box-shadow: none;
@@ -736,7 +735,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
   transform:         translate(-4px,-4px);
 }
 
-.card a span {
+.card a .card-in {
   position: absolute;
   display: block;
   overflow:hidden;
@@ -746,16 +745,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
   left: 0;
 }
 
-.card a span h3 {
+.card a .card-in p {
   color: #fff;
   margin: 0;
 }
 
-.card a:hover span h3 {
+.card a:hover .card-in p {
 
 }
 
-.card a span p {
+.card a .card-in p {
   font-size: 14px;
   color: rgba(255,255,255,0.7);
   margin: 0;
@@ -768,7 +767,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', e
   transition: all 1s ease-in-out;
 }
 
-.card a:hover span p {
+.card a:hover .card-in p {
   opacity: 1;
   max-height: 200px;
 }
