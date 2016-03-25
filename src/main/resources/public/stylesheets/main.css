@@ -869,11 +869,11 @@ ol, ul {
 }
 */
 
-#mypage .e1{background-image:url("/Users/DavidTung/full-stack-web-project-TianchengDong/src/main/resources/public/images/pic60.jpg");}
-#mypage .e2{background-image:url("/Users/DavidTung/full-stack-web-project-TianchengDong/src/main/resources/public/images/pic61.jpg");}
-#mypage .e3{background-image:url("/Users/DavidTung/full-stack-web-project-TianchengDong/src/main/resources/public/images/pic62.jpg");}
-#mypage .e4{background-image:url("/Users/DavidTung/full-stack-web-project-TianchengDong/src/main/resources/public/images/pic63.jpg");}
-#mypage .e5{background-image:url("/Users/DavidTung/full-stack-web-project-TianchengDong/src/main/resources/public/images/pic64.jpg");}
+#mypage .e1{background-image:url("../images/pic60.jpg");}
+#mypage .e2{background-image:url("../images/pic61.jpg");}
+#mypage .e3{background-image:url("../images/pic62.jpg");}
+#mypage .e4{background-image:url("../images/pic63.jpg");}
+#mypage .e5{background-image:url("../images/pic64.jpg");}
 
 #mypage .emotion {
   cursor:pointer;
