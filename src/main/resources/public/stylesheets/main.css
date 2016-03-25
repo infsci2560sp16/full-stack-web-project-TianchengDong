@@ -307,6 +307,10 @@ ol, ul {
   position: relative;
 }
 
+#signalert {
+  color:#FA5858;
+}
+
 .signup-input {
   display: block;
   width: 100%;
