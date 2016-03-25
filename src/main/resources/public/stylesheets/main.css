@@ -545,7 +545,7 @@ ol, ul {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 80px;
-  background-image:url("/Users/tiancheng/full-stack-web-project-TianchengDong/src/main/resources/public/images/pic51.jpg");
+  background-image:url("../images/pic51.jpg");
 }
 
 #japan .gallery-header {
@@ -554,7 +554,7 @@ ol, ul {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 80px;
-  background-image:url("/Users/tiancheng/full-stack-web-project-TianchengDong/src/main/resources/public/images/pic52.jpg");
+  background-image:url("../images/pic52.jpg");
 }
 
 #india .gallery-header {
@@ -563,7 +563,7 @@ ol, ul {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 80px;
-  background-image:url("/Users/tiancheng/full-stack-web-project-TianchengDong/src/main/resources/public/images/pic53.jpg");
+  background-image:url("../images/pic53.jpg");
 }
 
 #thailand .gallery-header {
@@ -572,7 +572,7 @@ ol, ul {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 80px;
-  background-image:url("/Users/tiancheng/full-stack-web-project-TianchengDong/src/main/resources/public/images/pic54.jpg");
+  background-image:url("../images/pic54.jpg");
 }
 
 #more .gallery-header {
@@ -581,7 +581,7 @@ ol, ul {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 80px;
-  background-image:url("/Users/tiancheng/full-stack-web-project-TianchengDong/src/main/resources/public/images/pic55.jpg");
+  background-image:url("../images/pic55.jpg");
 }
 
 #mypage .gallery-header {
@@ -590,7 +590,7 @@ ol, ul {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 80px;
-  background-image:url("/Users/tiancheng/full-stack-web-project-TianchengDong/src/main/resources/public/images/pic65.jpg");
+  background-image:url("../images/pic65.jpg");
 }
 
 .container img {
