@@ -92,8 +92,8 @@
       <div class="row">
         <div id="bj" class="col-lg-4">
           <img class="img-circle" src="images/pic17.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>city</h2>
-          <p>description</p>
+          <h2> abc </h2>
+          <p> </p>
           <p>
           <button id="beijing" class="favorite"></button>
           </p>
@@ -169,8 +169,8 @@
                         url: "/api/about",
                         success: function (result) {
                             var data = JSON.parse(result);
-                            $("#bj h2").html(result.city);
-                            $("#bj p1").html(result.description);
+                            $("#bj h2").html(data.city);
+                            $("#bj p").html(data.description);
                         }});
                 });
     </script>
