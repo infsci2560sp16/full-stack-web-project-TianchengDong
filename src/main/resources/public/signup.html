@@ -58,9 +58,9 @@
     		<ul class="singup-list">
     			<li class="signup-item">
     				<input id="sn1" type="text" placeholder="user name" class="signup-input">
-            <span></span>
     				<label for="sn1" class="signup-label">Name</label>
     			</li>
+          <span id="alert"></span>
     			<li class="signup-item">
     				<input id="sn2" type="email" placeholder="user@email.com" class="signup-input">
     				<label for="sn1" class="signup-label">Email</label>
@@ -129,9 +129,9 @@
 
 
                                             if(result.success === "true")
-                                            $("#sn1 span").html("Username is vaild");
+                                            $("#alert").html("Username is vaild");
                                             else {
-                                            $("#sn1 span").html("Username is occupied, please change another username ");
+                                            $("#alert").html("Username is occupied, please change another username ");
                                             }
                                           },
 
