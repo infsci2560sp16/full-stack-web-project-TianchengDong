@@ -13,12 +13,17 @@ import static spark.Spark.get;
 
 import com.heroku.sdk.jdbc.DatabaseUrl;
 
+import routes.*;
+
 public class Main {
 
   public static void main(String[] args) {
 
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
+
+    Object r = new Week7Routes();
+
 
     get("/hello", (req, res) -> "Hello World");
 
