@@ -60,7 +60,7 @@
     				<input id="sn1" type="text" placeholder="user name" class="signup-input">
     				<label for="sn1" class="signup-label">Name</label>
     			</li>
-          <li id="alert"></li>
+          <li id="alert" style="font-color: white; font-family: Avenir; font-color: #FA5858;"></li>
     			<li class="signup-item">
     				<input id="sn2" type="email" placeholder="user@email.com" class="signup-input">
     				<label for="sn1" class="signup-label">Email</label>
@@ -110,13 +110,12 @@
 
     $(document).ready(function() {
 
-    //Stops the submit request
     $("#signup-form").submit(function(e){
            e.preventDefault();
     });
 
     $("#sn1").on("blur",function(e){
-                //get the form data using another method
+
                 var username = $("input#sn1").val();
 
                 $.ajax({
@@ -127,15 +126,13 @@
 
                     success: function (result) {
 
+                        if(result.success === "true")
+                           //$("#alert").html("");
+                        else {
+                           $("#alert").html("Sorry, user name taken! ");
+                              }
+                    },
 
-                                            if(result.success === "true")
-                                            $("#alert").html("Username is vaild");
-                                            else {
-                                            $("#alert").html("Username is occupied, please change another username ");
-                                            }
-                                          },
-
-                    //If there was no resonse from the server
                     error: function(jqXHR, textStatus, errorThrown){
                          console.log("Something really bad happened " + textStatus);
                           $("#ajaxResponse").html(jqXHR.responseText);
