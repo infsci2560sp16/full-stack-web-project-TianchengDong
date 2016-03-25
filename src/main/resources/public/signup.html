@@ -54,10 +54,11 @@
 </div>
 <div class="signup-container">
   <div class="signup-cont">
-    <form class="signup">
+    <form id="signup-form" class="signup">
     		<ul class="singup-list">
     			<li class="signup-item">
     				<input id="sn1" type="text" placeholder="user name" class="signup-input">
+            <span></span>
     				<label for="sn1" class="signup-label">Name</label>
     			</li>
     			<li class="signup-item">
@@ -100,9 +101,54 @@
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/index.js"></script>
+
+    <script>
+
+    $(document).ready(function() {
+
+    //Stops the submit request
+    $("#signup-form").submit(function(e){
+           e.preventDefault();
+    });
+
+    $("#sn1").on("blur",function(e){
+                //get the form data using another method
+                var username = $("input#sn1").val();
+
+                $.ajax({
+                    type: "GET",
+                    url: "/api/checkuser/"+username,
+                    data: username,
+                    dataType: "json",
+
+                    success: function (result) {
+
+
+                                            if(result.success === "true")
+                                            $("#sn1 span").html("Username is vaild");
+                                            else {
+                                            $("#sn1 span").html("Username is occupied, please change another username ");
+                                            }
+                                          },
+
+                    //If there was no resonse from the server
+                    error: function(jqXHR, textStatus, errorThrown){
+                         console.log("Something really bad happened " + textStatus);
+                          $("#ajaxResponse").html(jqXHR.responseText);
+                    }
+
+
+
+                });
+        });
+
+    });
+    </script>
+
+
   </body>
 </html>

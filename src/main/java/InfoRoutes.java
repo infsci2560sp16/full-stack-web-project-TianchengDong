@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.Date;
 
 import static spark.Spark.get;
+import static spark.Spark.post;
 
 
 public class InfoRoutes {
@@ -28,14 +29,14 @@ public class InfoRoutes {
       }, gson::toJson);
 
 
-      get("/api/name", (req, res) -> {
+      post("/api/name", (req, res) -> {
           Map<String, Object> data = new HashMap<>();
           data.put("name", "David");
           return data;
       }, gson::toJson);
 
 
-      
+
 
 
         // get("/api/time/now", (req, res) -> {
