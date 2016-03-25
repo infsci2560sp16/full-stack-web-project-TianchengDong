@@ -1,5 +1,3 @@
-
-
 import com.google.gson.Gson;
 import java.util.HashMap;
 import java.util.Map;
@@ -36,6 +34,8 @@ public class InfoRoutes {
           return data;
       }, gson::toJson);
 
+
+      
 
 
         // get("/api/time/now", (req, res) -> {
