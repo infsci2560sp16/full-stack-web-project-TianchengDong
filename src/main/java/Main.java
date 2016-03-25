@@ -22,6 +22,7 @@ public class Main {
     staticFileLocation("/public");
 
     Object r = new InfoRoutes();
+    Object s = new SignupRoutes();
 
 
     get("/hello", (req, res) -> "Hello World");

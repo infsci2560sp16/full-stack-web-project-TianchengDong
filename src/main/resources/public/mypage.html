@@ -168,6 +168,7 @@
     <script>
                 $(function () {
                     $.ajax({
+                        type:"POST",
                         url: "/api/name",
                         success: function (result) {
                             var data = JSON.parse(result);
