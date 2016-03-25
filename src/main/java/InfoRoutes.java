@@ -8,11 +8,11 @@ import java.util.Date;
 import static spark.Spark.get;
 
 
-public class Week7Routes {
+public class InfoRoutes {
 
     Gson gson = new Gson();
 
-    public Week7Routes() {
+    public InfoRoutes() {
         setupRoutes();
     }
 
@@ -20,7 +20,6 @@ public class Week7Routes {
       get("/api/about", (req, res) -> {
           Map<String, Object> data = new HashMap<>();
           data.put("city", "Beijing");
-          // data.put("name", "Brian");
           data.put("description", "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.");
           return data;
       }, gson::toJson);
