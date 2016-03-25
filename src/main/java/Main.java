@@ -13,7 +13,6 @@ import static spark.Spark.get;
 
 import com.heroku.sdk.jdbc.DatabaseUrl;
 
-import routes.*;
 
 public class Main {
 
