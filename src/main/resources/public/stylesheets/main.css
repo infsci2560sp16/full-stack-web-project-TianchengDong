@@ -536,7 +536,7 @@ ol, ul {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 80px;
-  background-image:url("/Users/tiancheng/full-stack-web-project-TianchengDong/src/main/resources/public/images/pic50.jpg");
+  background-image:url("../images/pic50.jpg");
 }
 
 #southkorea .gallery-header {
