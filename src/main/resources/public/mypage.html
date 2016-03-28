@@ -194,6 +194,7 @@
                     $.ajax({
                         type:"POST",
                         url: "/api/input/:placename",
+                        data:placename,
                         success: function (result) {
                             var data = JSON.parse(result);
 
