@@ -193,12 +193,12 @@
                     var placename = $("input#input-place").val();
                     $.ajax({
                         type:"POST",
-                        url: "/api/input/:placename",
+                        url: "/api/input/place",
                         data:placename,
                         success: function (result) {
                             var data = JSON.parse(result);
 
-                            $("#get-name h5 span").html(data.name);
+                            $("#get-name h5 span").html(data.place);
                         }});
                 });
 

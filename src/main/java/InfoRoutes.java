@@ -36,10 +36,8 @@ public class InfoRoutes {
       }, gson::toJson);
 
 
-      post("/api/input/:placename", (req, res) -> {
-          String placename = req.params(":placename");
-          System.out.println(placename);
-          String result = "true";
+      post("/api/input/place", (req, res) -> {
+          req.queryParams("place"),
 
           Map<String, Object> data = new HashMap<>();
           data.put("success", result);
