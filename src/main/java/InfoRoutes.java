@@ -37,7 +37,7 @@ public class InfoRoutes {
 
 
       post("/api/input/place", (req, res) -> {
-          req.queryParams("place"),
+          req.queryParams("place");
 
           Map<String, Object> data = new HashMap<>();
           data.put("success", result);
