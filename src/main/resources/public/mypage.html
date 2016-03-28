@@ -75,8 +75,11 @@
       <div id="get-name" class="container">
         <br>
         <h3> MEET <span style="font-family:Skia; font-size:36px; font-weight:bold;">Asia</span> </h3>
-        <br><br>
+        <br><br><br>
         <h4> Hello, <span></span> </h4>
+        <br>
+        <h5> I wanna go to <span></span> </h5>
+        <input id="input-place" type="text" class="form-control" placeholder="Type the place you wanna go to" style="font-family:Avenir;">
       </div>
     </div>
 
@@ -184,6 +187,21 @@
                             $("#get-name h4 span").html(data.name);
                         }});
                 });
+
+
+                $(function () {
+                    var placename = $("input#input-place").val();
+                    $.ajax({
+                        type:"POST",
+                        url: "/api/input/:placename",
+                        success: function (result) {
+                            var data = JSON.parse(result);
+
+                            $("#get-name h5 span").html(data.name);
+                        }});
+                });
+
+
     </script>
 
 
