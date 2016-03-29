@@ -19,7 +19,7 @@ public class CityRoutes {
     HashMap<String,CityInfo> cityList = new HashMap<>();
 			cityList.put(beijing.getcName(), beijing);
 			cityList.put(shanghai.getcName(), shanghai);
-			cityList.put(xi-an.getcName(), xi-an);
+			
       return cityList;
   }
 
