@@ -54,36 +54,68 @@ $('.favorite').click(function(){
     alert(name);
 
     $.ajax({
-      url: "/api/about",
+      type: "GET",
+      url: "/api/mapInfo/"+name,
+      data: name,
+      dataType: "xml",
+
       success: function (result) {
-          var data = JSON.parse(result);
-           //alert(result.city);
-          $("#bj h2").html(data.city1);
-          $("#sh h2").html(data.city2);
-          $("#xa h2").html(data.city3);
-          $("#cd h2").html(data.city4);
-          $("#hk h2").html(data.city5);
-          $("#tp h2").html(data.city6);
-          $("#bj p").html(data.description);
-      }});
+
+                console.log(result);
+                var cname = $(result).find("name").first().text();
+                if(cname !="information is not available yet")
+                {
+                var population = $(result).find("population").first().text();
+                var location = $(result).find("location").first().text();
+                var area = $(result).find("area").first().text();
+                var language = $(result).find("language").first().text();
+                var currency = $(result).find("currency").first().text();
+                var time = $(result).find("time").first().text();
+                var poi1 = $(result).find("poi1").first().text();
+                var poi2 = $(result).find("poi2").first().text();
+                var poi3 = $(result).find("poi3").first().text();
+                $("#sh p").html("Description: <p>City Name: "+cname+";</p>"+
+                                      "<p>Population: "+population+";</p>"+
+                                      "<p>Location: "+location+";</p>"+
+                                      "<p>Area: "+area+";</p>"+
+                                      "<p>Language: "+language+";</p>"+
+                                      "<p>Currency: "+currency+";</p>"+
+                                      "<p>Time zone: "+time+";</p>"+
+                                      "<p>Point of Interest: "+poi1+";</p>"+
+                                      "<p>Point of Interest: "+poi2+";</p>"+
+                                      "<p>Point of Interest: "+poi3+";</p>");
+                }else{
+                  $("#sh p").html("Description: <p>"+cname+"</p>");
+
+                }
+
+                            },
+
+      //If there was no resonse from the server
+      error: function(jqXHR, textStatus, errorThrown){
+           console.log("Something really bad happened " + textStatus);
+            $("#countrySum").html(jqXHR.responseText);
+      }
+
+  });
 
 
 });
 
 
 /* city info */
-// $(function () {
-//     $.ajax({
-//         url: "/api/about",
-//         success: function (result) {
-//             var data = JSON.parse(result);
-//              //alert(result.city);
-//             $("#bj h2").html(data.city1);
-//             $("#sh h2").html(data.city2);
-//             $("#xa h2").html(data.city3);
-//             $("#cd h2").html(data.city4);
-//             $("#hk h2").html(data.city5);
-//             $("#tp h2").html(data.city6);
-//             $("#bj p").html(data.description);
-//         }});
-// });
+$(function () {
+    $.ajax({
+        url: "/api/about",
+        success: function (result) {
+            var data = JSON.parse(result);
+             //alert(result.city);
+            $("#bj h2").html(data.city1);
+            $("#sh h2").html(data.city2);
+            $("#xa h2").html(data.city3);
+            $("#cd h2").html(data.city4);
+            $("#hk h2").html(data.city5);
+            $("#tp h2").html(data.city6);
+            $("#bj p").html(data.description);
+        }});
+});
