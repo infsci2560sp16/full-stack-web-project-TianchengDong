@@ -85,7 +85,7 @@ $('.favorite').click(function(){
                                       "<p>Point of Interest: "+poi2+";</p>"+
                                       "<p>Point of Interest: "+poi3+";</p>");
                 }else{
-                  $("#aaa").html("Description: <p>"+cname+"</p>");
+                  $("#aaa").html("Description: <p>"+cname+"is favorited!</p>");
 
                 }
 
