@@ -74,7 +74,7 @@ $('.favorite').click(function(){
                 var poi1 = $(result).find("poi1").first().text();
                 var poi2 = $(result).find("poi2").first().text();
                 var poi3 = $(result).find("poi3").first().text();
-                $("#sh p").html("Description: <p>City Name: "+cname+";</p>"+
+                $("#aaa").html("Description: <p>City Name: "+cname+";</p>"+
                                       "<p>Population: "+population+";</p>"+
                                       "<p>Location: "+location+";</p>"+
                                       "<p>Area: "+area+";</p>"+
@@ -85,7 +85,7 @@ $('.favorite').click(function(){
                                       "<p>Point of Interest: "+poi2+";</p>"+
                                       "<p>Point of Interest: "+poi3+";</p>");
                 }else{
-                  $("#sh p").html("Description: <p>"+cname+"</p>");
+                  $("#aaa").html("Description: <p>"+cname+"</p>");
 
                 }
 
@@ -94,7 +94,7 @@ $('.favorite').click(function(){
       //If there was no resonse from the server
       error: function(jqXHR, textStatus, errorThrown){
            console.log("Something really bad happened " + textStatus);
-            $("#sh p").html(jqXHR.responseText);
+            $("#aaa").html(jqXHR.responseText);
       }
 
   });

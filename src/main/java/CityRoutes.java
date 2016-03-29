@@ -23,6 +23,10 @@ public class CityRoutes {
     HashMap<String,CityInfo> cityList = new HashMap<>();
 			cityList.put(beijing.getcName(), beijing);
 			cityList.put(shanghai.getcName(), shanghai);
+      cityList.put(xian.getcName(), xian);
+      cityList.put(chengdu.getcName(), chengdu);
+      cityList.put(hongkong.getcName(), hongkong);
+      cityList.put(taipei.getcName(), taipei);
 
       return cityList;
   }
