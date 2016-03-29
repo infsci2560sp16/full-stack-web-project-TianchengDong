@@ -49,6 +49,13 @@ $('.responsive').on('click', '.close', function(){
 /* favorite animation */
 $('.favorite').click(function(){
     $(this).toggleClass('favorited');
+    var name = $(".favorited").val();
+    alert(name);
+
+
+    $.ajax({
+
+
 });
 
 
