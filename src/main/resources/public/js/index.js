@@ -49,29 +49,41 @@ $('.responsive').on('click', '.close', function(){
 /* favorite animation */
 $('.favorite').click(function(){
     $(this).toggleClass('favorited');
+    //alert($(this).attr("value"));
     var name = $(".favorited").val();
     alert(name);
 
-
     $.ajax({
+      url: "/api/about",
+      success: function (result) {
+          var data = JSON.parse(result);
+           //alert(result.city);
+          $("#bj h2").html(data.city1);
+          $("#sh h2").html(data.city2);
+          $("#xa h2").html(data.city3);
+          $("#cd h2").html(data.city4);
+          $("#hk h2").html(data.city5);
+          $("#tp h2").html(data.city6);
+          $("#bj p").html(data.description);
+      }});
 
 
 });
 
 
 /* city info */
-$(function () {
-    $.ajax({
-        url: "/api/about",
-        success: function (result) {
-            var data = JSON.parse(result);
-             //alert(result.city);
-            $("#bj h2").html(data.city1);
-            $("#sh h2").html(data.city2);
-            $("#xa h2").html(data.city3);
-            $("#cd h2").html(data.city4);
-            $("#hk h2").html(data.city5);
-            $("#tp h2").html(data.city6);
-            $("#bj p").html(data.description);
-        }});
-});
+// $(function () {
+//     $.ajax({
+//         url: "/api/about",
+//         success: function (result) {
+//             var data = JSON.parse(result);
+//              //alert(result.city);
+//             $("#bj h2").html(data.city1);
+//             $("#sh h2").html(data.city2);
+//             $("#xa h2").html(data.city3);
+//             $("#cd h2").html(data.city4);
+//             $("#hk h2").html(data.city5);
+//             $("#tp h2").html(data.city6);
+//             $("#bj p").html(data.description);
+//         }});
+// });
