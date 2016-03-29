@@ -36,14 +36,14 @@ public class InfoRoutes {
       }, gson::toJson);
 
 
-      post("/api/input/place", (req, res) -> {
-          req.queryParams("place");
-
-          Map<String, Object> data = new HashMap<>();
-          data.put("success", result);
-
-          return data;
-      }, gson::toJson);
+      // post("/api/input/place", (req, res) -> {
+      //     req.queryParams("place");
+      //
+      //     Map<String, Object> data = new HashMap<>();
+      //     data.put("success", result);
+      //
+      //     return data;
+      // }, gson::toJson);
 
 
 
