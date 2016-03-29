@@ -15,7 +15,7 @@ public class CityRoutes {
   {
     CityInfo beijing = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
   	CityInfo shanghai = new CityInfo("United States of America","322,369,319","North America","Washington, D.C.","English","United States dollar","New York City","Los Angeles","Grand Canyon","Statue of Liberty");
-  	CityInfo xi-an = new CityInfo("Canada","36,048,521","North America","Ottawa","English and French","Canadian dollar","Vancouver","Toronto","Niagara Falls","Churchill");
+  	
     HashMap<String,CityInfo> cityList = new HashMap<>();
 			cityList.put(beijing.getcName(), beijing);
 			cityList.put(shanghai.getcName(), shanghai);
