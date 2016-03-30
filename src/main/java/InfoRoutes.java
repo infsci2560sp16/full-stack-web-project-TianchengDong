@@ -6,6 +6,8 @@ import java.util.Date;
 import static spark.Spark.get;
 import static spark.Spark.post;
 
+import org.json.JSONObject;
+
 
 public class InfoRoutes {
 
@@ -34,6 +36,40 @@ public class InfoRoutes {
           data.put("name", "David");
           return data;
       }, gson::toJson);
+
+
+      //respond to post json request from client
+    post("/api/signup", (req, res) -> {
+          Connection connection = null;
+          //**Testing**
+          System.out.println(req.body());
+        try {
+          connection = DatabaseUrl.extract().getConnection();
+          JSONObject obj = new JSONObject(req.body());
+          String username = obj.getString("username");
+          String email = obj.getString("email");
+          String password = obj.getString("password");
+
+          String sql = "INSERT INTO User(username, email, password) VALUES ('"
+                        + username + "','" + email + "','" + password + "')";
+
+          connection = DatabaseUrl.extract().getConnection();
+          Statement stmt = connection.createStatement();
+          stmt.executeUpdate("CREATE TABLE IF NOT EXISTS User");
+          stmt.executeUpdate(sql);
+
+           //**Testing**
+         System.out.println(username);
+         System.out.println(email);
+         System.out.println(password);
+
+         return req.body();
+        } catch (Exception e) {
+          return e.getMessage();
+        } finally {
+
+        }
+      });
 
 
       // post("/api/input/place", (req, res) -> {

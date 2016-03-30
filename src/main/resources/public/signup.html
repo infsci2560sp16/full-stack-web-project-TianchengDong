@@ -75,7 +75,7 @@
     			</li>
 
     			<li class="signup-item">
-            <a class="btn signup-submit ripple-effect" href="index.html" role="button">Sign up</a>
+            <a class="btn signup-submit ripple-effect" href="index.html" role="button" id="submit">Sign up</a>
     			</li>
 
     		</ul>
@@ -144,6 +144,36 @@
         });
 
     });
+
+
+
+    $(function(){
+
+        $("#submit").click(function(){
+      // '{"username":"ting","email":"tingli1101376@gmail.com","password":"123",cpassword:"123"}',
+        var username = $("#sn1").val();
+        var email = $("#sn2").val();
+        var password = $("#sn3").val();
+        var cpassword =$("#sn4").val();
+        var send = JSON.stringify({"username":username,"email":email,"password":password,"cpassword":password});
+        alert(send);
+              $.ajax({
+                  contentType:'application/json',
+                  url: '/api/signup',
+                  type: "POST",
+                  datatype: "json",
+                  data: send,
+                  success: function(data) {
+                      alert("Register successfully.");
+                      window.location.href='/index.html';
+                  }
+              });
+                    return false;
+          });
+   });
+
+
+
     </script>
 
 
