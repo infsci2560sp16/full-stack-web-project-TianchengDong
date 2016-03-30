@@ -3,10 +3,16 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Date;
 
+import static spark.Spark.*;
 import static spark.Spark.get;
 import static spark.Spark.post;
 
 import org.json.JSONObject;
+import java.sql.*;
+import java.util.ArrayList;
+import spark.template.freemarker.FreeMarkerEngine;
+import spark.ModelAndView;
+import com.heroku.sdk.jdbc.DatabaseUrl;
 
 
 public class InfoRoutes {
@@ -39,7 +45,7 @@ public class InfoRoutes {
 
 
       //respond to post json request from client
-    post("/api/signup", (req, res) -> {
+      post("/api/signup", (req, res) -> {
           Connection connection = null;
           //**Testing**
           System.out.println(req.body());
