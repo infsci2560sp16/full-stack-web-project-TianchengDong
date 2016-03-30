@@ -24,6 +24,7 @@ public class Main {
     Object r = new InfoRoutes();
     Object s = new SignupRoutes();
     Object t = new CityRoutes();
+    Object u = new Personinfo();
 
 
     get("/hello", (req, res) -> "Hello World");

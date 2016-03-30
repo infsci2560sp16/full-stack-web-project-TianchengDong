@@ -8,20 +8,20 @@ import spark.Request;
 public class CityRoutes {
 
   public CityRoutes(){
-  //  CreateSampleData();
     getCityInfo();
   }
+
   public HashMap<String,CityInfo> CreateSampleData()
   {
-    CityInfo beijing = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
-  	CityInfo shanghai = new CityInfo("United States of America","322,369,319","North America","Washington, D.C.","English","United States dollar","New York City","Los Angeles","Grand Canyon","Statue of Liberty");
-    CityInfo xian = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
-    CityInfo chengdu = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
-    CityInfo hongkong = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
-    CityInfo taipei = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
+     CityInfo beijing = new CityInfo("beijing","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
+  	 CityInfo shanghai = new CityInfo("shanghai","322,369,319","North America","Washington, D.C.","English","United States dollar","New York City","Los Angeles","Grand Canyon","Statue of Liberty");
+     CityInfo xian = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
+     CityInfo chengdu = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
+     CityInfo hongkong = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
+     CityInfo taipei = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
 
     HashMap<String,CityInfo> cityList = new HashMap<>();
-			cityList.put(beijing.getcName(), beijing);
+		  cityList.put(beijing.getcName(), beijing);
 			cityList.put(shanghai.getcName(), shanghai);
       cityList.put(xian.getcName(), xian);
       cityList.put(chengdu.getcName(), chengdu);

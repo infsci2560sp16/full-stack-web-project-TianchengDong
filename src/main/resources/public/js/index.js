@@ -51,7 +51,7 @@ $('.favorite').click(function(){
     $(this).toggleClass('favorited');
     //alert($(this).attr("value"));
     var name = $(".favorited").val();
-    alert(name);
+    //alert(name);
 
     $.ajax({
       type: "GET",
@@ -85,7 +85,7 @@ $('.favorite').click(function(){
                                       "<p>Point of Interest: "+poi2+";</p>"+
                                       "<p>Point of Interest: "+poi3+";</p>");
                 }else{
-                  $("#aaa").html("Description: <p>"+cname+"is favorited!</p>");
+                  $("#aaa").html("Description: <p>"+cname+"</p>");
 
                 }
 
@@ -117,5 +117,17 @@ $(function () {
             $("#hk h2").html(data.city5);
             $("#tp h2").html(data.city6);
             $("#bj p").html(data.description);
+        }});
+});
+
+/* person info */
+$(function () {
+    $.ajax({
+        url: "/api/personinfo",
+        success: function (result) {
+            var data = JSON.parse(result);
+             //alert(result.city);
+            $("#person h2").html(data.username);
+            $("#person li").html(data.city);
         }});
 });
