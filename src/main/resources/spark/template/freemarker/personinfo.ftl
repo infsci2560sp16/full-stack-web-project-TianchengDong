@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
   <title> My information </title>
 </head>
 
@@ -25,7 +25,7 @@
           <ul class="nav navbar-nav">
             <li class="active ripple-effect"><a href="index.html">Home</a></li>
             <li class="ripple-effect"><a href="login.html">Log in</a></li>
-            <li class = "active"><a href="/personinfo"> My information</a></li>
+            <li class = "active"><a href="/api/personinfo"> My information</a></li>
             <li class="ripple-effect"><a href="mypage.html">My page</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle ripple-effect" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery<span class="caret"></span></a>
