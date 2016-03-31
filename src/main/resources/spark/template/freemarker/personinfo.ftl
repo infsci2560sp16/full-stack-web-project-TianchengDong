@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
   <title> My information </title>
 </head>
 
@@ -55,9 +55,9 @@
 
 <div id="person">
 
-  	<h2><b>Hello, ${username}</b></h2>
+  	<h1 style="font-family: Avenir;"><b>Hello, ${username}</b></h1>
     <#if city??>
-    <div id ="personinfo">No cities have been favorited!</div>
+    <div id ="personinfo"> <p style="font-family: Avenir; font-size: 14pt;">No cities have been favorited! </p></div>
     <#else >
 
     <ul>
