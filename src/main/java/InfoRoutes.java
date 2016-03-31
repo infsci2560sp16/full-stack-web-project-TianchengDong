@@ -32,7 +32,7 @@ public class InfoRoutes {
           data.put("city4", "Chengdu");
           data.put("city5", "Hongkong");
           data.put("city6", "Taipei");
-          data.put("description", "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.");
+          data.put("description", "Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum.");
           return data;
       }, gson::toJson);
 
@@ -78,30 +78,7 @@ public class InfoRoutes {
       });
 
 
-      // post("/api/input/place", (req, res) -> {
-      //     req.queryParams("place");
-      //
-      //     Map<String, Object> data = new HashMap<>();
-      //     data.put("success", result);
-      //
-      //     return data;
-      // }, gson::toJson);
 
-
-
-
-
-        // get("/api/time/now", (req, res) -> {
-        //     Map<String, Object> data = new HashMap<>();
-        //     data.put("currentTime", new Date());
-        //     return data;
-        // }, gson::toJson);
-        //
-        // get("/api/time/now.xml", (req, res) -> {
-        //     Map<String, Object> data = new HashMap<>();
-        //     data.put("currentTime", new Date());
-        //     return data;
-        // }, gson::toJson);
 
 
   }

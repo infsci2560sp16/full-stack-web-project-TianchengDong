@@ -13,12 +13,12 @@ public class CityRoutes {
 
   public HashMap<String,CityInfo> CreateSampleData()
   {
-     CityInfo beijing = new CityInfo("beijing","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
-  	 CityInfo shanghai = new CityInfo("shanghai","322,369,319","North America","Washington, D.C.","English","United States dollar","New York City","Los Angeles","Grand Canyon","Statue of Liberty");
-     CityInfo xian = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
-     CityInfo chengdu = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
-     CityInfo hongkong = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
-     CityInfo taipei = new CityInfo("China","136,782,000","Asia","Beijing","Mandarin","RMB","Shanghai","Guangzhou","The Great Wall","the Palace Museum");
+     CityInfo beijing = new CityInfo("beijing","21,516,000","Middle North","Mainland China","Mandarin","RMB","GMT+8","Forbidden City","The Great Wall","Summer Palace");
+  	 CityInfo shanghai = new CityInfo("shanghai","24,152,700","East","Mainland China","Mandarin","RMB","GMT+8","The Bund","Shanghai Tower","Shanghai Disney");
+     CityInfo xian = new CityInfo("xian","8,627,500","North West","Mainland China","Mandarin","RMB","GMT+8","Giant Wild Goose Pagoda","Bell Tower","Drum Tower");
+     CityInfo chengdu = new CityInfo("chengdu","14,427,500","West","Mainland China","Mandarin","RMB","GMT+8","Mount Qingcheng","Dujiangyan","Sichuan Giant Panda Sanctuaries");
+     CityInfo hongkong = new CityInfo("hongkong","7,234,800","South","Hong Kong SAR","Cantonese","Hong Kong Dollar","GMT+8","Avenue of Stars","Victoria Harbour","The Ocean Park");
+     CityInfo taipei = new CityInfo("taipei","2,704,974","South East","Taiwan","Chinese","New Taipei Dollar","GMT+8","National Palace Museum","Taipei 101","Ximending");
 
     HashMap<String,CityInfo> cityList = new HashMap<>();
 		  cityList.put(beijing.getcName(), beijing);
