@@ -33,7 +33,7 @@ public class CityRoutes {
 
 
   private void getCityInfo(){
-    get("/api/mapInfo/:name", (req, res) -> {
+    get("/api/cityInfo/:name", (req, res) -> {
 
       String name = req.params(":name");
       HashMap<String,CityInfo> cityList = new HashMap<>();

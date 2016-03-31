@@ -55,7 +55,7 @@ $('.favorite').click(function(){
 
     $.ajax({
       type: "GET",
-      url: "/api/mapInfo/"+name,
+      url: "/api/cityInfo/"+name,
       data: name,
       dataType: "xml",
 
