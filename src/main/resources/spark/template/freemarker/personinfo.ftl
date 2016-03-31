@@ -53,7 +53,7 @@
 </div>
 
 
-<div id="person" style="margin-top:200px;">
+<div id="person" style="margin-top:450px;">
 
   	<h1 style="font-family: Avenir;"><b>Hello, ${username}</b></h1>
     <#if city??>
